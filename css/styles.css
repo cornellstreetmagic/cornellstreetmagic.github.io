@@ -198,6 +198,11 @@ section {
     background-color:#bf0000;
 }
 
+.red .active a,
+.red .active a:hover {
+    background-color: #bf0000;
+}
+
 #contact {
 	background-color: #fff;
 }
