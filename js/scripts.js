@@ -1,38 +1,9 @@
-/* smooth scrolling sections */
-/*$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - 50
-        }, 800);
-        
-        if (this.hash=="#section1") {
-            $('.scroll-up').hide();
-        }
-        else {
-            $('.scroll-up').show();
-        }
-        
-        
-        // activte animations in this section
-        target.find('.animate').delay(1200).addClass("animated");
-        setTimeout(function(){
-            target.find('.animated').removeClass("animated");
-        },2000);
-        
-        return false;
-      }
-    }
-});
-*/
-
-/*smoothy fades everything into view when ready*/
+/*smoothly fades everything into view when ready*/
 $(document).ready(function() {
     $('.main-content').fadeIn(800);
 });
 
+/*for smooth navigation*/
 var padding = 30;
 $('.navbar-nav li a').bind('click', function (event) {
     var $anchor = $(this);
