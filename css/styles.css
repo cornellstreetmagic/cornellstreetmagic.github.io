@@ -203,6 +203,17 @@ section {
     background-color: #bf0000;
 }
 
+.main-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 225px;
+    width: 400px;
+
+    clip: rect(150px,200px,200px,50px);
+}
+
 #contact {
 	background-color: #fff;
 }
