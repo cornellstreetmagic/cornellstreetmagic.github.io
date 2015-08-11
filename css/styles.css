@@ -184,9 +184,20 @@ section {
 }
 
 #officers {
-	background-color: #fff;
+    background-color: #fff;
   padding-left: 70px;
   padding-right: 70px;
+}
+
+#example {
+    background-color: rgba(0,0,0,0.85);
+    color:#fff;
+}
+
+#example2 {
+    background-color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .mini-thumbnail {
@@ -212,6 +223,11 @@ section {
     width: 400px;
 
     clip: rect(150px,200px,200px,50px);
+}
+
+.example{
+    height:250px;
+    width:250px;
 }
 
 #contact {
