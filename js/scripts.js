@@ -1,6 +1,6 @@
 /*smoothly fades everything into view when ready*/
 $(document).ready(function() {
-    $('.main-content').fadeIn(800);
+    $('.main-content').fadeIn(800, 'swing');
 });
 
 /*for smooth navigation*/
