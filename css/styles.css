@@ -189,6 +189,15 @@ section {
   padding-right: 70px;
 }
 
+.mini-thumbnail {
+    height: 100px;
+    width: 100px;
+
+    padding:1px;
+    border:1px solid rgba(0,0,0,0.85);
+    background-color:#bf0000;
+}
+
 #contact {
 	background-color: #fff;
 }
