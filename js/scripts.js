@@ -1,10 +1,3 @@
-/* activate scrollspy menu */
-/*$('body').scrollspy({
-  target: '#navbar-collapsible',
-  offset: 52
-});
-*/
-
 /* smooth scrolling sections */
 /*$('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
