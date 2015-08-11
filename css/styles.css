@@ -3,7 +3,7 @@
 
 html,body {
 	height:100%;
-    background:center no-repeat fixed url('../resources/img/waterwheel.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),center no-repeat fixed url('../resources/img/waterwheel.jpg');
     background-size: cover;
     color:#444;
     font-family: 'Lato', sans-serif;
@@ -253,3 +253,5 @@ footer .nav>li>a:hover {
     background-color:transparent;
 	color:#fff;
 }
+
+.main-content { display: none; }
