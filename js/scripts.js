@@ -34,3 +34,8 @@
     }
 });
 */
+
+/*smoothy fades everything into view when ready*/
+$(document).ready(function() {
+    $('.main-content').fadeIn(800);
+});
