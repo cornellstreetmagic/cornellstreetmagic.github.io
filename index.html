@@ -25,8 +25,8 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.js"></script>
     <![endif]-->
 </head>
 
@@ -85,14 +85,6 @@
         </div>
     </a>
 </section>
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<!-- <div class="jumbotron" id="main">
-    <div class="container landing">
-        <h1 class="landing-text">Welcome to Cornell Street Magic!</h1>
-        <p class="landing-text"> Come to learn about card magic, probability, manipulation, and more!</p>
-    </div>
-</div> -->
 
 <section class="container-fluid" id="whatwedo">
     <div class="row">
@@ -329,18 +321,22 @@
     </div>
 
     <div class="container">
-        <div class="example">
-            <style>video.instagram, img.instagram {
-                width: 100% !important;
-                height: auto !important;
-            }</style>
-            <video class="instagram" width="612" height="612" controls
-                   poster="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11821330_532943006859902_549739945_n.jpg">
-                <source src="http://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11771533_1096808817013882_1800442097_n.mp4"
-                        type="video/mp4">
-            </video>
-            <br/>A modern take on Coulomb by Kevin Jin #hindushuffle by @<a
-                href='https://instagram.com/all_hail_the_hindu_shuffle'>all_hail_the_hindu_shuffle</a>
+        <div class="row">
+            <div class="col-md-4">
+                <video class="exampleVid" controls
+                       poster="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11821330_532943006859902_549739945_n.jpg">
+                    <source src="http://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11771533_1096808817013882_1800442097_n.mp4"
+                            type="video/mp4">
+                </video>
+            </div>
+
+            <div class="col-md-4">
+                <video class="exampleVid" controls>
+                    <source src="resources/vid/papercuts.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
         </div>
     </div>
 </section>
@@ -443,7 +439,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
 <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
 <!-- Script Just One Page Theme -->
 <script src="js/scripts.js"></script>
 </body>
