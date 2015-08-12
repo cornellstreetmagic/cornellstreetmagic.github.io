@@ -1,4 +1,4 @@
-# cornellstreetmagic.github.io
+# [cornellstreetmagic.github.io](http://cornellstreetmagic.github.io/)
 The Website for Cornell Street Magic
 
 ## Authors
@@ -15,6 +15,7 @@ This is the site for the Cornell Street Magic Club! Visitors will be able to rea
 * AngularJS
 * Scrollspy (for the highlighting navbar)
 * jQuery (for some of the animations)
+* MasonryJS (for the grid layout)
 
 ## Credits for the Images/Videos
 * The [Virts](http://home.thevirts.com/) for the awesome background images
