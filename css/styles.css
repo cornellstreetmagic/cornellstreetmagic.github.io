@@ -91,10 +91,21 @@ a:hover {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
 }
 
+.navbar-brand > .brand-icon {
+    height:40px;
+    width:50px;
+    display: inline-block;
+    margin-top: -8px; /* fix when borderless logo used */
+}
+
+.navbar-brand {
+    margin-top: -2px; /* fix when borderless logo used */
+}
+
 .scroll-down {
   position: absolute;
   left: 50%;
-  bottom: 40px;
+  bottom: 10%;
   border: 2px solid #fff;
   border-radius: 50%;
   height: 50px;
@@ -252,7 +263,9 @@ footer .nav>li>a:hover {
 	color:#fff;
 }
 
-.main-content { display: none; }
+footer .fa {
+    padding: 0 10px 0 0;
+}
 
 .grid {
     background: #EEE;

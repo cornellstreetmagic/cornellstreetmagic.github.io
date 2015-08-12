@@ -5,7 +5,7 @@ The Website for Cornell Street Magic
 2015:
 * [Neel Kapse](https://github.com/neelkapse) (nk458)
 * [Austin Liu](https://github.com/aliu139) (arl96)
-* [Matthew Hsu](https://github.com/mahsu)
+* [Matthew Hsu](https://github.com/mahsu) (mdh267)
 
 ## Description
 This is the site for the Cornell Street Magic Club! Visitors will be able to read a little bit about the club, view some of us in action, request to join this magical community, and contact us with any quesitons.

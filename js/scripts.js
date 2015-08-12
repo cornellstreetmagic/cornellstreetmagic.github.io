@@ -5,18 +5,9 @@ $(document).ready(function() {
 
 /*for smooth navigation*/
 var padding = 0;
-$('.navbar-nav li a').bind('click', function (event) {
+$('.navbar-nav li a, .scroll-down.animated, .navbar-brand').bind('click', function (event) {
     var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - padding
-    }, 1000, 'easeInOutExpo');
-    event.preventDefault();
-});
-
-/*for smooth navigation*/
-var padding = 0;
-$('.scroll-down a').bind('click', function (event) {
-    var $anchor = $(this);
+    console.log($(this));
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - padding
     }, 1000, 'easeInOutExpo');
