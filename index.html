@@ -30,7 +30,7 @@
     <![endif]-->
 </head>
 
-<body class="main-content" data-spy="scroll" data-target="#navbar-collapsible" data-offset="20">
+<body class="main-content" data-spy="scroll" data-target="#navbar-collapsible" data-offset="20" data-ng-app="csm.controllers">
 <nav class="navbar navbar-trans navbar-fixed-top" role="navigation" id="nav">
     <div class="container">
         <div class="navbar-header">
@@ -341,7 +341,7 @@
     </div>
 </section>
 
-<section class="container-fluid" id="join">
+<section class="container-fluid" id="join" data-ng-controller="join.ctrl">
     <div class="row">
         <h1 class="text-center">Join</h1>
         <hr>
@@ -369,13 +369,13 @@
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <div class="col-sm-3">
-                            <input type="text" class="form-control" id="first" placeholder="First Name">
+                            <input type="text" class="form-control" ng-model="first" id="first" placeholder="First Name">
                         </div>
                         <div class="col-sm-3">
-                            <input type="text" class="form-control" id="last" placeholder="Last Name">
+                            <input type="text" class="form-control" ng-model="last" id="last" placeholder="Last Name">
                         </div>
                         <div class="col-sm-3">
-                            <input type="text" class="form-control" id="id" placeholder="Cornell ID">
+                            <input type="text" class="form-control" ng-model="id" id="id" placeholder="Cornell ID">
                         </div>
                         <div class="col-sm-3">
                             <ul class="nav nav-pills">
@@ -395,6 +395,11 @@
                        data-target="#myModal">Join
                         us!</a>
                 </p>
+
+                <!--Just for Testing -->
+                <p>{{first}}</p>
+                <p>{{last}}</p>
+                <p>{{id}}</p>
             </div>
 
         </div>
@@ -435,12 +440,14 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
 <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
 <!-- Script Just One Page Theme -->
 <script src="js/scripts.js"></script>
+<script src="js/controllers.js"></script>
 </body>
 </html>
