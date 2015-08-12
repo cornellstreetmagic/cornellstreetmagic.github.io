@@ -391,8 +391,8 @@
                     <br>
 
                 <h1>Signups haven't started yet! Please check back in a few weeks!</h1>
-                <!--<a href="#" class="btn btn-danger btn-lg btn-huge lato">Join
-                    us!</a>-->
+                <a href="#" class="btn btn-danger btn-lg btn-huge lato" data-ng-click="add()">Join
+                    us!</a>
                 </p>
 
                 <!--Just for Testing -->
@@ -452,14 +452,20 @@
     </div>
 </footer>
 
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
 <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+<!-- We use client cookies to save the REST API token -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-cookies.js"></script>
+
+<!-- Backand SDK for Angular -->
+<script src="http://cdn.backand.net/backand/dist/1.7.2/backand.min.js"></script>
+
 <!-- Script Just One Page Theme -->
 <script src="js/scripts.js"></script>
 <script src="js/controllers.js"></script>
