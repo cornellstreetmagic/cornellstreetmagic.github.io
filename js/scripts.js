@@ -4,9 +4,10 @@ $(document).ready(function() {
 });
 
 /*for smooth navigation*/
-var padding = 30;
-$('.navbar-nav li a').bind('click', function (event) {
+var padding = 0;
+$('.navbar-nav li a, .scroll-down.animated, .navbar-brand').bind('click', function (event) {
     var $anchor = $(this);
+    console.log($(this));
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - padding
     }, 1000, 'easeInOutExpo');
