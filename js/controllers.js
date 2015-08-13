@@ -2,7 +2,7 @@
  * Created by aliu_000 on 8/11/2015.
  */
 "use strict";
-var app = angular.module('csm.controllers', ['backand', 'ngCookies']);
+var app = angular.module('csm.controllers', ['backand', 'ngCookies', 'ngToast']);
 
 app.config(function (BackandProvider) {
     BackandProvider.manageDefaultHeaders();
@@ -12,20 +12,21 @@ app.config(function (BackandProvider) {
 });
 
 
-app.controller('join.ctrl', ['$scope', '$http', 'Backand', '$cookieStore', function($scope, $http, Backand, $cookieStore){
-    $scope.first="";
-    $scope.last="";
+app.controller('join.ctrl', ['$scope', '$http', 'Backand', '$cookieStore', 'ngToast', function ($scope, $http, Backand, $cookieStore, ngToast) {
+    $scope.first = "";
+    $scope.last = "";
     $scope.id = "";
     $scope.skill = false;
 
-    $scope.derpToken= "";
+    $scope.confirmation = false;
 
-    $scope.signIn = function() {
+    $scope.derpToken = "";
+
+    $scope.signIn = function () {
         Backand.signin('cornellstreetmagic@gmail.com', 'passcsm', 'csmwebsite')
             .then(
             function (token) {
                 //Do good for the world
-                console.log(token);
                 $scope.derpToken = token;
             },
             function (data, status, headers, config) {
@@ -35,20 +36,22 @@ app.controller('join.ctrl', ['$scope', '$http', 'Backand', '$cookieStore', funct
         );
     };
 
-    $scope.add = function(){
-      return $http({
-         method: 'POST',
-         url: Backand.getApiUrl() + '/1/objects/joinResults?returnObject=true',
-         headers: {
-           'Authorization': $scope.derpToken
-         },
-         data: {
-             "first": $scope.first,
-             "last": $scope.last,
-             "cid": $scope.id,
-             "skill": $scope.skill
-         }
-      });
+    $scope.add = function () {
+        $http({
+            method: 'POST',
+            url: Backand.getApiUrl() + '/1/objects/joinResults?returnObject=true',
+            headers: {
+                'Authorization': $scope.derpToken
+            },
+            data: {
+                "first": $scope.first,
+                "last": $scope.last,
+                "cid": $scope.id,
+                "skill": $scope.skill
+            }
+        });
+
+        $scope.confirmation = true;
     };
 
     $scope.signIn();

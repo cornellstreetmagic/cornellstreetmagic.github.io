@@ -22,6 +22,8 @@
 
     <!-- Uses "Just One Page" Bootstrap Theme (http://www.bootstrapzero.com/bootstrap-template/just-one-page)  -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ngToast.css">
+    <link rel="stylesheet" href="css/ngToast-animations.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -362,51 +364,50 @@
             </div>
         </div>
         <div class="row">
-            <div>
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" ng-model="first" id="first"
-                                   placeholder="First Name">
-                        </div>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" ng-model="last" id="last" placeholder="Last Name">
-                        </div>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control" ng-model="id" id="id" placeholder="Cornell ID">
-                        </div>
-                        <div class="col-sm-3">
-                            <ul class="nav nav-pills">
-                                <li role="presentation" class="btn-danger"><a>Skill Level</a></li>
-                                <li role="presentation"><a>Casual</a></li>
-                                <li role="presentation"><a>Advanced</a></li>
-                            </ul>
-                        </div>
+            <p>
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" data-ng-model="first" id="first"
+                               placeholder="First Name">
                     </div>
-                </form>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" data-ng-model="last" id="last" placeholder="Last Name">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" data-ng-model="id" id="id" placeholder="Cornell ID">
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="nav nav-pills">
+                            <li><a>Skill Level</a></li>
+                            <li role="presentation" data-ng-class='{"btn-danger": !skill}' data-ng-click="skill=false"><a href="">Casual</a>
+                            </li>
+                            <li role="presentation" data-ng-class='{"btn-danger": skill}' data-ng-click="skill=true"><a href="">Advanced</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
 
-                <br>
+            <br>
 
-                <p class="text-center">
-                    <br>
-
-                <h1>Signups haven't started yet! Please check back in a few weeks!</h1>
-                <a href="#" class="btn btn-danger btn-lg btn-huge lato" data-ng-click="add()">Join
+            <p class="text-center">
+                <a href="#join" class="btn btn-danger btn-lg btn-huge lato" data-ng-click="add()">Join
                     us!</a>
-                </p>
+            </p>
 
-                <!--Just for Testing -->
-                <p>{{first}}</p>
+            <br>
 
-                <p>{{last}}</p>
-
-                <p>{{id}}</p>
+            <div class="well btn-danger" data-ng-show="confirmation">
+                <h3>Success! Please Check Your Cornell Email!</h3>
             </div>
 
         </div>
 
-        <br>
     </div>
+
+    <br>
 </section>
 
 <section class="container-fluid" id="contact">
@@ -456,6 +457,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
 <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-sanitize.js"></script>
+
 <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
@@ -469,5 +473,7 @@
 <!-- Script Just One Page Theme -->
 <script src="js/scripts.js"></script>
 <script src="js/controllers.js"></script>
+
+<script src="js/ngToast.js"></script>
 </body>
 </html>
