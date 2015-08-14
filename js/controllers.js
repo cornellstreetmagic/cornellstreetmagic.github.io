@@ -52,6 +52,12 @@ app.controller('join.ctrl', ['$scope', '$http', 'Backand', '$cookieStore', 'ngTo
         });
 
         $scope.confirmation = true;
+
+        //Clear the fields
+        $scope.first= "";
+        $scope.last = "";
+        $scope.id = "";
+        $scope.skill = false;
     };
 
     $scope.signIn();
