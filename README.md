@@ -8,7 +8,7 @@ The Website for Cornell Street Magic
 * [Matthew Hsu](https://github.com/mahsu) (mdh267)
 
 ## Designers
-* Annie Shi for the new logo
+* [Annie Shi](https://github.com/AnnieShi15) for the new logo
 
 ## Description
 This is the site for the Cornell Street Magic Club! Visitors will be able to read a little bit about the club, view some of us in action, request to join this magical community, and contact us with any quesitons.
