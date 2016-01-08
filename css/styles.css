@@ -148,11 +148,6 @@ a:hover {
   text-align: center;
 }
 
-.join-btn {
-  /*How do you properly center this?*/
-  margin-left: 525px;
-}
-
 section {
 	padding-top:70px;  
     padding-bottom:50px;
@@ -171,66 +166,10 @@ section {
         top: 0; left: 0; bottom: 0; right: 0;
     }
 }
-  
-#landing {
-	background-color: rgba(0,0,0,0.7);
-	color:#fff;
-	font-family: 'Bitter', serif;
-}
-  
-#join {
-	background-color: #f6f6f6;
-  background-color: rgba(0,0,0,0.85);
-  color:#fff;
-}
-
-#about {
-  background-color: rgba(0,0,0,0.85);
-  color:#fff;
-}
-  
-#whatwedo {
-	background-color: #fff;
-}
-
-#officers {
-    background-color: #fff;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-#example {
-    background-color: rgba(0,0,0,0.85);
-    color:#fff;
-}
-
-#example2 {
-    background-color: #fff;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-.mini-thumbnail {
-    height: 100px;
-    width: 100px;
-
-    padding:1px;
-    border:1px solid rgba(0,0,0,0.85);
-    background-color:#bf0000;
-}
 
 .red .active a,
 .red .active a:hover {
     background-color: #bf0000;
-}
-
-.main-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    height: 225px;
-    padding-top: 20px;
 }
 
 .exampleVid{
@@ -238,18 +177,8 @@ section {
     width:100%;
 }
 
-#sponsors{
-  background-color: #fff;
-}
-
-#contact {
-	background-color: #f6f6f6;
-  background-color: rgba(0,0,0,0.85);
-  color:#fff;
-}
-
 footer {
-	background-color:#2b2b2b;
+	  background-color:#2b2b2b;
     color:#ddd;
     min-height:100px;
     padding-top:20px;
@@ -263,7 +192,7 @@ footer .nav>li>a {
 }
 
 footer .nav>li>a:hover {
-    background-color:transparent;
+  background-color:transparent;
 	color:#fff;
 }
 
@@ -272,7 +201,13 @@ footer .fa {
 }
 
 .grid {
-    background: #EEE;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 60px;
+
+    background-color: transparent;
     max-width: 1200px;
 }
 
@@ -281,6 +216,8 @@ footer .fa {
     content: '';
     display: block;
     clear: both;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ---- grid-item ---- */
@@ -303,6 +240,57 @@ footer .fa {
 .grid-item--height3 { height: 960px; }
 .grid-item--height4 { height: 1280px; }
 
+/* ---- sections ---- */
+
+#landing {
+  background-color: rgba(0,0,0,0.7);
+  color:#fff;
+  font-family: 'Bitter', serif;
+}
+  
+#join {
+  background-color: #f6f6f6;
+  background-color: rgba(0,0,0,0.85);
+  color:#fff;
+}
+
+#about {
+  background-color: rgba(0,0,0,0.85);
+  color:#fff;
+}
+  
+#whatwedo {
+  background-color: #fff;
+}
+
+#officers {
+    background-color: #fff;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+#example {
+    background-color: rgba(0,0,0,0.85);
+    color:#fff;
+}
+
+#example2 {
+    background-color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#sponsors{
+  background-color: #fff;
+}
+
+#contact {
+  background-color: #f6f6f6;
+  background-color: rgba(0,0,0,0.85);
+  color:#fff;
+}
+
+/* ---- customs ---- */
 
 .whatwedo {
   width: 200px;
@@ -311,4 +299,32 @@ footer .fa {
   padding:1px;
   border:1px solid rgba(0,0,0,0.85);
   background-color:#bf0000;
+}
+
+.mainimg{
+  height: 400px;
+  width: 500px;
+}
+
+.main-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 225px;
+    padding-top: 20px;
+}
+
+.join-btn {
+  margin-left: 525px;
+}
+
+
+.mini-thumbnail {
+    height: 100px;
+    width: 100px;
+
+    padding:1px;
+    border:1px solid rgba(0,0,0,0.85);
+    background-color:#bf0000;
 }

@@ -2,7 +2,7 @@
  * Created by aliu_000 on 8/11/2015.
  */
 "use strict";
-var app = angular.module('csm.controllers', ['backand', 'ngCookies', 'ngToast']);
+var app = angular.module('csm.controllers', ['backand', 'ngCookies']);
 
 app.config(function (BackandProvider) {
     BackandProvider.manageDefaultHeaders();
@@ -12,7 +12,7 @@ app.config(function (BackandProvider) {
 });
 
 
-app.controller('join.ctrl', ['$scope', '$http', 'Backand', '$cookieStore', 'ngToast', function ($scope, $http, Backand, $cookieStore, ngToast) {
+app.controller('join.ctrl', ['$scope', '$http', 'Backand', '$cookieStore', function ($scope, $http, Backand, $cookieStore) {
     $scope.first = "";
     $scope.last = "";
     $scope.id = "";
