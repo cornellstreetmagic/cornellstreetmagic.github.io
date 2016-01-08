@@ -1,7 +1,7 @@
 /*smoothly fades everything into view when ready*/
-$(document).ready(function() {
-    $('.main-content').fadeIn(800, 'swing');
-});
+// $(document).ready(function() {
+//     $('.main-content').fadeIn(800, 'swing');
+// });
 
 /*for smooth navigation*/
 var padding = 0;
