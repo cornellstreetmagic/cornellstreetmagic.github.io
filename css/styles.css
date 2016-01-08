@@ -238,8 +238,14 @@ section {
     width:100%;
 }
 
+#sponsors{
+  background-color: #fff;
+}
+
 #contact {
-	background-color: #fff;
+	background-color: #f6f6f6;
+  background-color: rgba(0,0,0,0.85);
+  color:#fff;
 }
 
 footer {
@@ -299,8 +305,8 @@ footer .fa {
 
 
 .whatwedo {
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
 
   padding:1px;
   border:1px solid rgba(0,0,0,0.85);
