@@ -226,7 +226,7 @@ footer .fa {
     width: 320px;
     height: 320px;
     float: left;
-    background: #bf0000;
+    background-color: transparent;
     border: 5px solid #333;
     border-color: hsla(0, 0%, 0%, 0.5);
     border-radius: 5px;
