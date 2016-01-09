@@ -1,4 +1,4 @@
-# [cornellstreetmagic.github.io](http://cornellstreetmagic.github.io/)
+# [cornellstreetmagic.github.io](http://cornellstreetmagic.com/)
 The Website for Cornell Street Magic
 
 ## Authors
@@ -12,6 +12,9 @@ The Website for Cornell Street Magic
 
 ## Description
 This is the site for the Cornell Street Magic Club! Visitors will be able to read a little bit about the club, view some of us in action, request to join this magical community, and contact us with any quesitons.
+
+## Notes
+2016 - New Year New Site! Edits + domain acquired!
 
 ## Technologies Used
 * Twitter Bootstrap
